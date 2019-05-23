@@ -1,0 +1,322 @@
+:root {
+	--main-gold: #ceb084;
+	--main-black: #131313;
+	--main-grey: #262626;
+}
+
+body {
+	margin: 0;
+	background: var(--main-black);
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 70px;
+	font-family: facto, sans-serif;
+	margin: 0;
+	line-height: 1em;
+}
+
+h2 {
+	color: var(--main-gold);
+	font-family: facto, sans-serif;
+	font-size: 36px;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+h3 {
+	font-family: facto, sans serif;
+	color: #ffffff;
+	font-size: 32px;
+}
+
+h4 {
+	font-family: facto, sans serif;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+p {
+	font-family: facto, sans serif;
+	color: #ffffff;
+}
+
+ul {
+	padding-left: 20px;
+}
+
+li {
+	color: #ffffff;
+	font-family: facto, sans serif;
+}
+
+a {
+	font-family: facto, sans serif;
+}
+
+.white-text {
+	color: #ffffff;
+}
+
+.gold-text {
+	color: var(--main-gold);
+}
+
+.bold-text {
+	font-weight: 700;
+}
+
+.light-text {
+	font-weight: 100;
+}
+
+.regular-text {
+	font-weight: 400;
+}
+
+.page-header {
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 25px;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 25px 0;
+}
+
+.header-left {
+	justify-self: left;
+}
+
+.header-left img {
+	width: 130px;
+}
+
+.header-right {
+	justify-self: right;
+}
+
+.header-right a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-right a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.hero {
+	display: grid;
+	grid-template-columns: 42% 58%;
+	grid-template-rows: 7.5fr 2.5fr;
+}
+
+.hero-image {
+	grid-row: 1/3;
+}
+
+.hero-image svg {
+	width: 100%;
+	height: auto;
+}
+
+.hero-caption {
+	justify-self: center;
+	align-self: center;
+	padding-left: 50px;
+}
+
+.hero-caption-text h2 {
+	font-weight: 400;
+}
+
+.hero-caption .hero-caption-text hr {
+	display: inline-block;
+	margin-bottom: 7px;
+	width: 20px;
+}
+
+.page-body-1-container {
+	background-color: var(--main-grey);
+}
+
+.page-body-1 {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 25px;
+}
+
+.page-body-1 h3 {
+	line-height: 1.5em;
+	margin: 0;
+}
+
+.page-body-1 hr {
+	border: 1px solid var(--main-gold);
+	margin: 25px auto 10px;
+	max-width:100px;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+}
+
+.page-body-2 {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.page-body-2 .body-2-title {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.body-2-title hr {
+	border: 1px solid var(--main-gold);
+	width: 150px;
+}
+
+.page-2-card-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 25px;
+	margin-top: 30px;
+	max-width: 1100px;
+	padding: 0 50px;
+}
+
+.card {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+}
+
+.card img {
+	width: 100%;
+}
+
+.card-title {
+	background-color: var(--main-gold);
+	text-align: center;
+	padding: 15px 0;
+	width: 100%;
+}
+
+.card-title h3 {
+	color: #000000;
+	font-size: 30px;
+	margin: 0;
+}
+
+.card-text h3 {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.card-button {
+	color: var(--main-gold);
+	border: 2px solid var(--main-gold);
+	padding: 20px;
+	margin: 20px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.page-body-3-container {
+	max-width: 1250px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+	padding: 0 50px;
+}
+
+.body-3-list li {
+	margin: 16px 0 0; 
+}
+
+.inner-list {
+	list-style: none;
+}
+
+.inner-list p {
+	margin: 8px 0;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 25px;
+}
+
+.footer-copyright {
+	align-self: end;
+	padding: 10px;
+}
+
+.footer-copyright p {
+	font-size: 12px;
+}
+
+.footer-logo {
+	width: 100%;
+}
+
+.footer-logo img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+	.hero {
+		grid-template-columns: 1fr;
+	}
+
+	.hero-caption {
+		margin-bottom: 25px;
+	}
+
+	.page-2-card-container {
+		grid-template-columns: 1fr;
+	}
+
+	.page-body-3-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	h1 {
+		font-size: 12vw;
+	}
+
+	h2 {
+		font-size: 5.2vw;
+	}
+
+	h3 {
+		font-size: 4.4vw;
+	}
+
+	.body-3-right {
+		justify-self: start;
+	}
+
+	.footer {
+		grid-template-columns: 1fr;
+	}
+
+	.footer-copyright p {
+		font-size: 10px;
+		text-align: center;
+	}
+}
